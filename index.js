@@ -1,7 +1,11 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
-
-
+var votingAge = Math.random() * 30;
+if (votingAge > 18){
+    console.log("true");
+} else {
+  console.log("false");
+}
 
 
 
