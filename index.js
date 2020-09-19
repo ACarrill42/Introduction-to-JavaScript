@@ -89,7 +89,7 @@ let z = conversion(x,y)
 function conversion (x,y){
   return x*y;
 }
-console.log(z);
+console.log(z, 'mi');
 
 
 
@@ -101,7 +101,7 @@ let z = conversion(x,y)
 function conversion (x,y){
   return x*y;
 }
-console.log(z);  
+console.log(z,'cm');  
 
 
 
