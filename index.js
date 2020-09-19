@@ -98,7 +98,48 @@ function dogFeeder(age,weight){
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
+let human = prompt("Choose rock, paper, or scissors?");
+let computer = Math.random() * 1;
+if (computer < 0.34){
+  computer = "rock";
+}else if(computer >= 0.67) {
+  computer = "paper";
+}else {
+  computer = "scissors";
+}
 
+let game = function(p1,p2) {
+  if(p1===p2){
+    return "It's a tie"
+  }
+
+  if (p1==="rock"){
+  if(p2==="scissors"){
+    return "rock wins";
+  }else {
+    return "paper wins";
+  }
+  }
+  if (p1==="paper"){
+  if (p2==="rock"){
+    return "paper wins";
+  } else {
+    if (p2===scissors){
+      return "scissors wins";
+    }
+  }
+  }
+  if (p1==="scissors") {
+  if (p2==="rock") {
+    return "rock wins";
+  } else {
+    if ( p2 === "paper"){
+      return "scissors wins";
+    }
+  }
+  }
+};
+game(human,computer)
   
   
 
