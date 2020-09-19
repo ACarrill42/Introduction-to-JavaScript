@@ -65,7 +65,29 @@ console.log(x);
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-  
+
+dogFeeder(1,15)
+function dogFeeder(age,weight){
+  if(age >= 1){
+    if (weight <= 5){
+      console.log(`Dog must eat ${weight* .05}lbs of food`)
+    } else if (weight <= 10){
+      console.log(`Dog must eat ${weight * .04}lbs of food`)
+    }else if (weight <=15){
+      console.log(`Dog must eat ${weight * .03}lbs of food`)
+    }else {
+      console.log(`Dog must eat ${weight * .02}lbs of food`)
+    }
+  }else{
+    if (age <= 2 / 4){
+      console.log(`Puppies must eat ${weight * 0.10}lbs of food`)
+    }else if (age <= 4 / 7){
+      console.log(`Puppies must eat ${weight * 0.05}lbs of food`)
+    }else {
+      console.log(`Puppies must eat ${weight * 0.04}lbs of food`)
+    }
+  }
+}  
 
 
 
@@ -110,8 +132,13 @@ console.log(z,'cm');
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
+annoyingSong(100)  
+function annoyingSong(bottles) {
+  for (let i = bottles; i > 0; i--) {
+    console.log(`${i} of soda on the wall, ${i} of soda. Take one down, pass it around. ${bottles -1} bottles of soda on the wall.`)
+  }
 
+}
 
 
 
