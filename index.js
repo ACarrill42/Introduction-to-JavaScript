@@ -10,19 +10,27 @@ if (votingAge > 18){
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
-
+let x = 10;
+let y = 30;
+let z = 20;
+if (x < y){
+  console.log(z);
+}
 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-
+var string = "1999";
+Number(string);
 
 
 
 
 //Task d: Write a function to multiply a*b 
-
+function math(a,b){
+    return a*b;
+}
 
 
 
@@ -98,7 +106,20 @@ if (votingAge > 18){
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
+
+
+let grades = Math.random() * 100;
+if (grades > 90) {
+  console.log("A");
+} else if (grades > 80) {
+  console.log("B");
+}  else if (grades > 70) {
+  console.log("C");
+}  else if (grades > 60) {
+  console.log("D");
+}  else if (grades < 60) {
+  console.log("F");
+}  
 
   
   
