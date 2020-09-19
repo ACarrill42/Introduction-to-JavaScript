@@ -38,7 +38,12 @@ function math(a,b){
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
+let x = newAge(26,7);
 
+function newAge(a,b){
+  return a * b;
+}
+console.log(x);
 
 
 
@@ -78,13 +83,25 @@ function math(a,b){
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
-
+let x = 0.62137;
+let y = Math.random() * 100;
+let z = conversion(x,y)
+function conversion (x,y){
+  return x*y;
+}
+console.log(z);
 
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
+let x = 30.48;
+let y = Math.random() * 50;
+let z = conversion(x,y)
+function conversion (x,y){
+  return x*y;
+}
+console.log(z);  
 
 
 
